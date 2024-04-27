@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>FILMS</h1>
+   <title>Star Wars Films</title>
+  </head>
+      <body>
+          <h1>{{ film_data.title }}</h1>
+          <p><strong>Director:</strong> {{ film_data.director }}</p>
+          <p><strong>Producer:</strong> {{ film_data.producer }}</p>
+          <p><strong>Release Date:</strong> {{ film_data.release_date }}</p>
+          <h2>Opening Crawl</h2>
+          <p>{{ film_data.opening_crawl }}</p>
+          <h2>Characters</h2>
+          <ul>
+              {% for character_url in film_data.characters %}
+                  <li><a href="{{ character_url }}">{{ character_url }}</a></li>
+              {% endfor %}
+          </ul>
   
 </body>
 </html>
