@@ -1,6 +1,6 @@
 body{
-  background: skyblue
-  display:flex
+  background: skyblue;
+  display:flex;
 }
 
 @keyframes dance {
@@ -12,9 +12,8 @@ body{
 }
 
 h1 {
+    color: red;
     font-size: 2em;
-    justify-content;center
-    align-content;center
     margin-bottom: 10px;
     animation: dance 1s infinite;
 }
