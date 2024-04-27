@@ -1,6 +1,5 @@
 body{
   background: skyblue;
-  display:flex;
 }
 
 @keyframes dance {
@@ -35,3 +34,9 @@ h2{
     margin-bottom: 10px;
     animation: bounce 1s infinite;
 }
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
